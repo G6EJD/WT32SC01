@@ -108,6 +108,7 @@ void loop() {
     if (PressureTrend > 0) PressureTrend_Str = "Rising";
     if (PressureTrend < 0) PressureTrend_Str = "Falling";
     display_text(10, 218, "Pressure    = " + String(AirPressure, 0) + "hPa", CYAN, 2);
+    display_text(270, 223, "(" + PressureTrend_Str + ")", CYAN, 1);
     if (WiFi.status() == WL_CONNECTED) display_text(5, 12, "Wi-Fi", RED, 1);
     else StartWiFi();
     DisplayWindDirection(385, 120, winddirection, windspeed, 75, YELLOW, 2);
