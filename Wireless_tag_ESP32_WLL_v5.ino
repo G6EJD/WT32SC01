@@ -670,7 +670,7 @@ String ZCode(String msg) {
   if (msg == "V") {
     //Icon = "https://openweathermap.org/img/wn/09d@2x.png";
     tft.pushImage(x_pos, y_pos, icon_x_size, icon_y_size, Img_09d_2x);
-    message = "Rain at times, becoming unsettled";
+    message = "Rain, becoming very unsettled";
   }
   if (msg == "W") {
     //Icon = "https://openweathermap.org/img/wn/09d@2x.png";
